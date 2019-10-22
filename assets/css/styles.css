@@ -7,3 +7,26 @@
     - Center Everything in page
     - Try to make color split table for highscores
     -  Purple Buttons*/
+    .highscore {
+        
+    }
+
+    #timer {
+        display: inline-block;
+    }
+
+    .content {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .intro {
+        padding: 1%;
+        display: inline-block;
+        width: 60%;
+    }
+
+    .btn {
+        background-color: blueviolet;
+        border-color: blueviolet;
+    }
