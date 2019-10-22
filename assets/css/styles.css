@@ -11,13 +11,27 @@
         padding-top: 10%;
     }
 
+    .highscores {
+        line-height: 3;
+    }
+
+    .higher {
+        text-align: initial;
+    }
+
     .intro {
         padding: 1%;
         display: inline-block;
         width: 60%;
     }
 
+    .center {
+        text-align: center;
+    }
+
     .btn {
         background-color: blueviolet;
         border-color: blueviolet;
+        display: inline-block;
+        margin: 5%;
     }
