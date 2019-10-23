@@ -12,3 +12,8 @@ function quizStart() {
     startTimer();
     initQ();
 }
+
+function startTimer() {
+    timer.html(timeLeft);
+    quizTime = setInterval(tick, 1000);
+}
