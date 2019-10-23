@@ -1,5 +1,6 @@
-    #timer {
+    #timeDisplay {
         display: inline-block;
+        font-size: 1.50rem;
     }
 
     .content {
