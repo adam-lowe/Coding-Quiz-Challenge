@@ -30,5 +30,13 @@
         background-color: blueviolet;
         border-color: blueviolet;
         display: inline-block;
-        margin: 5%;
+        margin: 1%;
+    }
+
+     .left {
+    text-align: left;
+
+    }
+    .quiz.btn {
+    margin-left: 25%;
     }
