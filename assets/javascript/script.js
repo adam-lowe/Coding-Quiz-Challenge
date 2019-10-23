@@ -12,9 +12,6 @@ var answerBtn4 = $("#answer4")
 var timeLeft = 0
 var quizTime = 0
 
-// hide all quiz elements immediately
-$(".quiz").hide();
-
 // set initial timer value and fire off two functions
 function quizStart() {
     timeLeft = 75

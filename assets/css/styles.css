@@ -40,3 +40,7 @@
     .quiz.btn {
     margin-left: 25%;
     }
+
+    .quiz {
+        display: none;
+    }
