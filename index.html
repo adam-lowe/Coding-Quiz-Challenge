@@ -26,10 +26,17 @@
 
             <h1 class="intro main">Coding Quiz Challenge</h1>
             <h2 id="question" class="quiz"></h2>
-            <button id="answer1" class="quiz" style="display: none;"></button>
-            <button id="answer2" class="quiz" style="display: none;"></button>
-            <button id="answer3" class="quiz" style="display: none;"></button>
-            <button id="answer4" class="quiz" style="display: none;"></button>
+            <div class="left">
+                <br class="quiz">
+                <br class="quiz">
+                <button type="button" id="answer1" class="quiz btn btn-danger"></button>
+                <br class="quiz">
+                <button type="button" id="answer2" class="quiz btn btn-danger"></button>
+                <br class="quiz">
+                <button type="button" id="answer3" class="quiz btn btn-danger"></button>
+                <br class="quiz">
+                <button type="button" id="answer4" class="quiz btn btn-danger"></button>
+            </div>
             <h3 class="intro main">Try to answer the following code-related questions within the time limit. Keep in mind
                 that incorrect answers will penalize your score/time by ten seconds</p>
                 <button id="startBtn" type="button" onclick="quizStart();" class="main btn btn-danger">Start Quiz</button>
