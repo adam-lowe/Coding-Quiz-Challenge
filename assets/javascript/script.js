@@ -17,3 +17,15 @@ function startTimer() {
     timer.html(timeLeft);
     quizTime = setInterval(tick, 1000);
 }
+
+function tick() {
+    if (timeLeft !== 0) {
+     timeLeft--
+     timer.html(timeLeft)
+    }
+    else {
+        alert("time up")
+    clearInterval(quizTime)
+    }
+    return;
+}
