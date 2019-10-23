@@ -29,3 +29,9 @@ function tick() {
     }
     return;
 }
+
+function initQ() {
+    $(".main").hide();
+    $(".quiz").show();
+    
+}
