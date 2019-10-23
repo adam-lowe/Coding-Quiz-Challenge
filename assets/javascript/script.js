@@ -7,3 +7,8 @@ var startBtn = $("#startBtn")
 var timeLeft = 0
 var quizTime = 0
 
+function quizStart() {
+    timeLeft = 75
+    startTimer();
+    initQ();
+}
