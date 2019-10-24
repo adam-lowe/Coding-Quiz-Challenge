@@ -98,10 +98,11 @@ function quizOver() {
 
 // this function renders the table on the highscore table with the scores from local storage
 function renderTable() {
+    $(".scores").remove();
     for (let i = 0; i < localStorage.length; i++) {
      var userName = localStorage.key(i)
      var userScore = localStorage.getItem(userName)
-     $("tbody").after('<tr><td>' + userName + ' - ' + userScore + '</td></tr>');
+     $("tbody").after('<tr class="scores"><td>' + userName + ' - ' + userScore + '</td></tr>');
     }
 }
 // $("ol").append("<li>Appended item</li>");
