@@ -105,7 +105,7 @@ function renderTable() {
      $("tbody").after('<tr class="scores"><td>' + userName + ' - ' + userScore + '</td></tr>');
     }
 }
-
+//  this function has the clear highscores button work by clearing local storage and re-rendering table
 function clearStorage() {
     localStorage.clear();
     renderTable();
