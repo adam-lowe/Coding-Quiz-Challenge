@@ -39,13 +39,15 @@ function tick() {
 function initQ() {
     $(".main").hide();
     $(".quiz").show();
-    startQuiz();
+    quiz(1);
 }
 
-function startQuiz() {
-    questionDiv.html(questionsArray[0].title)
-    answerBtn1.html(questionsArray[0].choices[0])
-    answerBtn2.html(questionsArray[0].choices[1])
-    answerBtn3.html(questionsArray[0].choices[2])
-    answerBtn4.html(questionsArray[0].choices[3])
+function quiz(questionNumber) {
+    questionDiv.html(questionsArray[questionNumber].title)
+    answerBtn1.html(questionsArray[questionNumber].choices[0])
+    answerBtn2.html(questionsArray[questionNumber].choices[1])
+    answerBtn3.html(questionsArray[questionNumber].choices[2])
+    answerBtn4.html(questionsArray[questionNumber].choices[3])
 }
+// how to get text in button \/
+// $(answerBtn1).html()
