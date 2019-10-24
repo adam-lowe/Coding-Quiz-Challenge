@@ -12,6 +12,11 @@ var timeLeft = 0
 var quizTime = 0
 var score = 0
 
+// this function is to check if current page is highscore page
+if ($('title').html() === "Highscores") {
+    renderTable();
+}
+
 // set initial timer value and fire off two functions
 function quizStart() {
     timeLeft = 75
