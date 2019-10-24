@@ -40,7 +40,7 @@ function tick() {
 function initQ() {
     $(".main").hide();
     $(".quiz").show();
-    quiz(1);
+    quiz(qNum);
 }
 
 function quiz(questionNumber) {
@@ -49,6 +49,17 @@ function quiz(questionNumber) {
     answerBtn2.html(questionsArray[questionNumber].choices[1])
     answerBtn3.html(questionsArray[questionNumber].choices[2])
     answerBtn4.html(questionsArray[questionNumber].choices[3])
+}
+
+function answerCheck(btnId) {
+    qNum++
+    if (($(btnId).html()) === (questionsArray[qNum].answer)) {
+        correctAnswer();
+    }
+    else {
+        wrongAnswer();
+    }
+    quiz(qNum);
 }
 // how to get text in button \/
 // $(answerBtn1).html()
