@@ -9,6 +9,7 @@ var answerBtn1 = $("#answer1")
 var answerBtn2 = $("#answer2")
 var answerBtn3 = $("#answer3")
 var answerBtn4 = $("#answer4")
+var feedback = $("#feedback")
 var qNum = 0
 var timeLeft = 0
 var quizTime = 0
