@@ -36,8 +36,8 @@ function tick() {
      timer.innerHTML = (timeLeft)
     }
     else {
-        alert("time up")
-    clearInterval(quizTime)
+        clearInterval(quizTime)
+        quizOver();
     }
     return;
 }
