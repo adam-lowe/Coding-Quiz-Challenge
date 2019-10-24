@@ -13,6 +13,7 @@ var feedback = $("#feedback")
 var qNum = 0
 var timeLeft = 0
 var quizTime = 0
+var score = 0
 
 // set initial timer value and fire off two functions
 function quizStart() {
