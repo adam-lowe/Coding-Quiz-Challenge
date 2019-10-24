@@ -77,3 +77,7 @@ function wrongAnswer() {
     $(feedback).html("Wrong");
     setTimeout(function() {$(feedback).html("");}, 800)
 }
+
+function quizOver() {
+    
+}
