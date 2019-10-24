@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Highscores</title>
+	<title id="pageTitle">Highscores</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,12 +20,13 @@
 			<div class="content col-8 higher">
 				<h1 class="highscores">Highscores</h1>
 				<table class="table table-striped">
-					<tbody>
+					<tbody id="tableBody">
+						<tr class="scores"></tr>
 					</tbody>
 				</table>
 				<div class="row">
 					<button type="button" onclick="window.location='index.html';" id="homeBtn" class="btn btn-danger">Go Back</button>
-					<button type="button" onclick="clearStorage();" id="clearBtn" class="btn btn-danger">Clear Highscores</button>
+					<button type="button" onclick="clearStorage();" href="highscore.html" id="clearBtn" class="btn btn-danger">Clear Highscores</button>
 				</div>
 			</div>
 			<div class="col-2"></div>
