@@ -46,7 +46,7 @@ function initQ() {
 }
 
 function quiz() {   
-    if (qNum > questionsArray.length) {
+    if (qNum >= questionsArray.length) {
     quizOver();
 }
 else {
@@ -60,10 +60,11 @@ else {
 function answerCheck(btnId) {
     if (($("#" + btnId).html()) === (questionsArray[qNum].answer)) {
         rightAnswer();
-    qNum++
+        qNum++
     }
     else {
         wrongAnswer();
+        qNum++
     }
     quiz(qNum);
 }
