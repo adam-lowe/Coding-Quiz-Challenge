@@ -105,4 +105,9 @@ function renderTable() {
      $("tbody").after('<tr class="scores"><td>' + userName + ' - ' + userScore + '</td></tr>');
     }
 }
+
+function clearStorage() {
+    localStorage.clear();
+    renderTable();
+}
 // $("ol").append("<li>Appended item</li>");
