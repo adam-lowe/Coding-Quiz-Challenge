@@ -1,6 +1,3 @@
-//TODO: Get all the link buttons to function onclick
-//  - get clear highscore button to clear local storage
-// Link this and other js scripts (including jquery) to html
 var timeDisplay = $("#timeDisplay")
 var timer = $("#timer")
 var startBtn = $("#startBtn")
@@ -44,7 +41,7 @@ function initQ() {
     $(".quiz").show();
     quiz(qNum);
 }
-
+//  function checks if there are anymore questions and if not ends the quiz
 function quiz() {   
     if (qNum >= questionsArray.length) {
     quizOver();
@@ -56,7 +53,7 @@ else {
     answerBtn3.html(questionsArray[qNum].choices[2])
     answerBtn4.html(questionsArray[qNum].choices[3])
 }}
-
+//  function checks whether or not answer is the correct one
 function answerCheck(btnId) {
     if (($("#" + btnId).html()) === (questionsArray[qNum].answer)) {
         rightAnswer();
@@ -68,18 +65,15 @@ function answerCheck(btnId) {
     }
     quiz(qNum);
 }
-
+//  this function runs when answer is right
 function rightAnswer() {
     score = (score + timeLeft)
     $(feedback).html("Correct");
     setTimeout(function() {$(feedback).html("");}, 800)
-    // $(timer).html()
 }
-
+//  this function runs when answer is wrong
 function wrongAnswer() {
     timeLeft = (timeLeft - 15)
     $(feedback).html("Wrong");
     setTimeout(function() {$(feedback).html("");}, 800)
 }
-// how to get text in button \/
-// $(answerBtn1).html()
