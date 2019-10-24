@@ -9,7 +9,7 @@ var answerBtn1 = $("#answer1")
 var answerBtn2 = $("#answer2")
 var answerBtn3 = $("#answer3")
 var answerBtn4 = $("#answer4")
-var qNum = 1
+var qNum = 0
 var timeLeft = 0
 var quizTime = 0
 
@@ -43,16 +43,16 @@ function initQ() {
     quiz(qNum);
 }
 
-function quiz(questionNumber) {   
-    if (questionNumber > questionsArray.length) {
+function quiz() {   
+    if (qNum > questionsArray.length) {
     quizOver();
 }
 else {
-    questionDiv.html(questionsArray[questionNumber].title)
-    answerBtn1.html(questionsArray[questionNumber].choices[0])
-    answerBtn2.html(questionsArray[questionNumber].choices[1])
-    answerBtn3.html(questionsArray[questionNumber].choices[2])
-    answerBtn4.html(questionsArray[questionNumber].choices[3])
+    questionDiv.html(questionsArray[qNum].title)
+    answerBtn1.html(questionsArray[qNum].choices[0])
+    answerBtn2.html(questionsArray[qNum].choices[1])
+    answerBtn3.html(questionsArray[qNum].choices[2])
+    answerBtn4.html(questionsArray[qNum].choices[3])
 }}
 
 function answerCheck(btnId) {
