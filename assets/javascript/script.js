@@ -110,4 +110,3 @@ function clearStorage() {
     localStorage.clear();
     renderTable();
 }
-// $("ol").append("<li>Appended item</li>");
