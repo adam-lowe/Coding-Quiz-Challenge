@@ -80,8 +80,14 @@ function wrongAnswer() {
 
 function quizOver() {
     $(".quiz").hide();
-    $(".content").prepend('<h1 class="done">All Done!</h1> <button class="btn btn-danger">Submit</button> <input> - Enter Initials</input>')
+    $(".content").prepend('<h1 class="done">All Done!</h1> <button id="submit" class="btn btn-danger">Submit</button> <input id="userScore"> - Enter Initials</input>')
+    $(".done").after('<p id="finalScore">Your final score is </p>');
+    $("#finalScore").append(score);
+    $('#submit').click(function(){
+        var value = $('#userScore').val();
+       localStorage.setItem(value, score);
 
+    });  
     clearInterval(quizTime)
 }
 // $("ol").append("<li>Appended item</li>");
