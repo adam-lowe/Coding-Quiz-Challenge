@@ -86,8 +86,7 @@ function wrongAnswer() {
 function quizOver() {
     $(".quiz").hide();
     $(".content").prepend('<h1 class="done">All Done!</h1> <button id="submit" class="btn btn-danger">Submit</button> <input id="userScore"> - Enter Initials</input>')
-    $(".done").after('<p id="finalScore">Your final score is </p>');
-    $("#finalScore").append(score);
+    $(".done").after('<p id="finalScore">Your final score is ' + score + '</p>');
     $('#submit').click(function(){
         var value = $('#userScore').val();
        localStorage.setItem(value, score);
