@@ -79,5 +79,9 @@ function wrongAnswer() {
 }
 
 function quizOver() {
-    
+    $(".quiz").hide();
+    $(".content").prepend('<h1 class="done">All Done!</h1> <button class="btn btn-danger">Submit</button> <input> - Enter Initials</input>')
+
+    clearInterval(quizTime)
 }
+// $("ol").append("<li>Appended item</li>");
