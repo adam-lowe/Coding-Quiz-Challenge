@@ -68,5 +68,18 @@ function answerCheck(btnId) {
     }
     quiz(qNum);
 }
+
+function rightAnswer() {
+    score = (score + timeLeft)
+    $(feedback).html("Correct");
+    setTimeout(function() {$(feedback).html("");}, 800)
+    // $(timer).html()
+}
+
+function wrongAnswer() {
+    timeLeft = (timeLeft - 15)
+    $(feedback).html("Wrong");
+    setTimeout(function() {$(feedback).html("");}, 800)
+}
 // how to get text in button \/
 // $(answerBtn1).html()
