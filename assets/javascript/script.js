@@ -82,6 +82,7 @@ function wrongAnswer() {
     $(feedback).html("Wrong");
     setTimeout(function() {$(feedback).html("");}, 800)
 }
+
 //  this function generates the end screen and allows user to submit initials with their score
 function quizOver() {
     $(".quiz").hide();
@@ -95,6 +96,7 @@ function quizOver() {
     clearInterval(quizTime)
 }
 
+// this function renders the table on the highscore table with the scores from local storage
 function renderTable() {
     for (let i = 0; i < localStorage.length; i++) {
      var userName = localStorage.key(i)
