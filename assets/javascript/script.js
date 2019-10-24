@@ -94,4 +94,12 @@ function quizOver() {
     });  
     clearInterval(quizTime)
 }
+
+function renderTable() {
+    for (let i = 0; i < localStorage.length; i++) {
+     var userName = localStorage.key(i)
+     var userScore = localStorage.getItem(userName)
+     $("tbody").after('<tr><td>' + userName + ' - ' + userScore + '</td></tr>');
+    }
+}
 // $("ol").append("<li>Appended item</li>");
