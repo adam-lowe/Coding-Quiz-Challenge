@@ -43,13 +43,17 @@ function initQ() {
     quiz(qNum);
 }
 
-function quiz(questionNumber) {
+function quiz(questionNumber) {   
+    if (questionNumber > questionsArray.length) {
+    quizOver();
+}
+else {
     questionDiv.html(questionsArray[questionNumber].title)
     answerBtn1.html(questionsArray[questionNumber].choices[0])
     answerBtn2.html(questionsArray[questionNumber].choices[1])
     answerBtn3.html(questionsArray[questionNumber].choices[2])
     answerBtn4.html(questionsArray[questionNumber].choices[3])
-}
+}}
 
 function answerCheck(btnId) {
     qNum++
