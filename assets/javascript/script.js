@@ -57,9 +57,9 @@ else {
 }}
 
 function answerCheck(btnId) {
+    if (($("#" + btnId).html()) === (questionsArray[qNum].answer)) {
+        rightAnswer();
     qNum++
-    if (($(btnId).html()) === (questionsArray[qNum].answer)) {
-        correctAnswer();
     }
     else {
         wrongAnswer();
