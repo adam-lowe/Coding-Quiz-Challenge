@@ -44,3 +44,14 @@
     .quiz {
         display: none;
     }
+
+    #feedback {
+    margin-left: 25%;
+    color: #cccccc;
+    font-style: italic;
+    }
+
+    hr {
+        width: 50%;
+        padding: 1% auto;
+    }
