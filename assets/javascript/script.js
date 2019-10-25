@@ -99,7 +99,9 @@ function quizOver() {
     var submit = document.getElementById("submit")
     submit.addEventListener("click", function(){
         var value = document.getElementById('userScore').value;
-       localStorage.setItem(value, score) });  
+       localStorage.setItem(value, score)
+       window.location.href = "highscore.html"
+    });  
     clearInterval(quizTime)
 }
 
