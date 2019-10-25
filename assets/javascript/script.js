@@ -73,7 +73,7 @@ function answerCheck(btnId) {
 }
 //  this function runs when answer is right
 function rightAnswer() {
-    score = (score + timeLeft)
+    score = timeLeft
     feedback.innerHTML = ("Correct");
     setTimeout(function() {feedback.innerHTML = ("");}, 800)
 }
@@ -90,6 +90,8 @@ function quizOver() {
     var content = document.getElementById('theContent')
     var done = document.getElementById("done")
     var submit = document.getElementById("submit")
+
+    timer.innerHTML = (0)
     
     content.insertAdjacentHTML('afterbegin', '<h1 id="done">All Done!</h1> <button id="submit" class="btn btn-danger">Submit</button> <input id="userScore"> - Enter Initials</input>');
 
