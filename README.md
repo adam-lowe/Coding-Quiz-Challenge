@@ -1,6 +1,6 @@
-# Homework 4 - Coding Quiz
+# Coding Quiz
 
-This repo is for the UNCC coding bootcamp's Fourth homework assignment
+This repo is for the UNCC coding bootcamp
 
 ## Instructions
 
