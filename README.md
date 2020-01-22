@@ -26,4 +26,4 @@ Clicking the link to view highscores will bring user to a table of locally store
 
 [Github Repo](https://github.com/Goldpm/HW4-Coding-Quiz-Challenge)
 
-[Completed Work](https://adam-lowe.github.io/HW4-Coding-Quiz-Challenge/)
+[Completed Work](https://adam-lowe.github.io/Coding-Quiz-Challenge/)
